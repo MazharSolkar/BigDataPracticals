@@ -34,10 +34,7 @@ def assignment(df, centroids):
     for i in centroids.keys():
         # sqrt((x1 - x2)^2 - (y1 - y2)^2)
         df['distance_from_{}'.format(i)] = (
-            np.sqrt(
-                (df['x'] - centroids[i][0]) ** 2
-                + (df['y'] - centroids[i][1]) ** 2
-            )
+            np.sqrt((df['x'] - centroids[i][0]) ** 2 + (df['y'] - centroids[i][1]) ** 2)
         )
     centroid_distance_cols = ['distance_from_{}'.format(i) for i in centroids.keys()]
     df['closest'] = df.loc[:, centroid_distance_cols].idxmin(axis=1)
