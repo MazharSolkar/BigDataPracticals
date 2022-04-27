@@ -1,2 +1,1 @@
-x= df.iloc[:,[2,3]]
-# y= df.iloc[:,4]
+y_predict = classifier.predict(x_test_scaled)
