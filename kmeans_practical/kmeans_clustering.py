@@ -3,7 +3,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
 
 df = pd.DataFrame({
     'x': [12, 20, 28, 18, 29, 33, 24, 45, 45, 52, 51, 52, 55, 53, 55, 61, 64, 69, 72],
@@ -25,8 +24,8 @@ for i in centroids.keys():
     plt.scatter(*centroids[i], color=colmap[i])
 plt.xlim(0, 80)
 plt.ylim(0, 80)
+plt.title("Initialisation step __By Mazhar Solkar")
 plt.show()
-print("__By Mazhar Solkar")
 
 ## Assignment Stage
 
@@ -51,6 +50,7 @@ for i in centroids.keys():
     plt.scatter(*centroids[i], color=colmap[i])
 plt.xlim(0, 80)
 plt.ylim(0, 80)
+plt.title("Assignment Stage __By Mazhar Solkar")
 plt.show()
 
 ## Update Stage
@@ -80,6 +80,7 @@ for i in old_centroids.keys():
     dx = (centroids[i][0] - old_centroids[i][0]) * 0.75
     dy = (centroids[i][1] - old_centroids[i][1]) * 0.75
     ax.arrow(old_x, old_y, dx, dy, head_width=2, head_length=3, fc=colmap[i], ec=colmap[i])
+plt.title("Update Stage __By Mazhar Solkar")
 plt.show()
 
 ## Repeat Assigment Stage
@@ -93,6 +94,7 @@ for i in centroids.keys():
     plt.scatter(*centroids[i], color=colmap[i])
 plt.xlim(0, 80)
 plt.ylim(0, 80)
+plt.title("Repeat Assignment Stage __By Mazhar Solkar")
 plt.show()
 
 # Continue until all assigned categories don't change any more
@@ -109,5 +111,6 @@ for i in centroids.keys():
     plt.scatter(*centroids[i], color=colmap[i])
 plt.xlim(0, 80)
 plt.ylim(0, 80)
+plt.title("Final Stage __By Mazhar Solkar")
 plt.show()
-print("__By Mazhar Solkar")
+

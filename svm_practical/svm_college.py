@@ -38,3 +38,4 @@ from sklearn import metrics
 print("accuracy score with linear kernel")
 print(metrics.accuracy_score(y_test,y_pred))
 print("__By Mazhar Solkar")
+
