@@ -17,7 +17,7 @@ x, y = make_classification(
 # Create a scatter plot
 plt.scatter(x, y, c=y, cmap='rainbow')
 plt.title('Scatter Plot of Logistic Regression')
-plt.title('__By Mazhar Solkar')
+plt.title('__By Abhijeet Maity')
 plt.show()
 
 # Split the dataset into training and test dataset
@@ -42,6 +42,6 @@ y_pred = log_reg.predict(x_test)
 from sklearn.metrics import confusion_matrix
 print("\n Confusion Matrix")
 print(confusion_matrix(y_test, y_pred))
-print('__By Mazhar Solkar')
+print('__By Abhijeet Maity')
 
 

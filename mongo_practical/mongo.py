@@ -11,7 +11,7 @@ print(list(records.find()))
 
 print("\n############### one record updated ###############")
 myquery = { "eno" : 4}
-newvalues = { "$set":{"ename":"Laxman"}}
+newvalues = { "$set":{"ename":"abhijeet"}}
 records.update_one(myquery,newvalues)
 for v in records.find():
     print(v)
@@ -26,6 +26,7 @@ print("\n############### one record deleted ###############")
 y=records.delete_one({"name":"Raj"})
 for v in records.find():
     print(v)
-print("\n__By Mazhar Solkar")
+print("\n__By Abhijeet Maity")
+
 
 
