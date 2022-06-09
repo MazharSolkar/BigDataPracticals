@@ -46,9 +46,9 @@ print(Weight_predict)
 data.plot(kind='scatter',x='waist_cm',y='weight_kg')
 plt.plot(waist,model.predict(waist),color='red', linewidth=2)
 plt.scatter(Waist_new,Weight_predict, color='black')
-plt.title('__By Abhijeet Maity')
+plt.title('__By Mazhar Solkar')
 plt.show()
-print('__By Abhijeet Maity')
+print('__By Mazhar Solkar')
 
 #predict more values
 x = [85,90,60]
