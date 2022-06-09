@@ -38,7 +38,7 @@ print(classifier.score(x_test_scaled,y_test))
 plt.scatter(x_test[y_test==0]['Age'],x_test[y_test==0]['EstimatedSalary'],c='cyan',alpha=0.7)
 #plotting the scatter plot, c is color alpha is for transparency  y_test==0 indicates product not purchased
 plt.scatter(x_test[y_test==1]['Age'],x_test[y_test==1]['EstimatedSalary'],c='magenta',alpha=0.7)
-plt.title("__By Abhijeet Maity")
+plt.title("__By Mazhar Solkar")
 plt.show()
-print("\n__By Abhijeet Maity")
+print("\n__By Mazhar Solkar")
 
